@@ -9,8 +9,8 @@ const WeatherButton = ({ cities, setCity, selectedCity }) => {
        {/* 현재 위치 버튼 */}
        <Button 
          className="mt-5 me-1" 
-         variant={selectedCity === null ? "success" : "warning"} 
-         onClick={() => setCity(null)}>Current Location</Button>
+         variant={selectedCity === "" ? "success" : "warning"} 
+         onClick={() => setCity("")}>Current Location</Button>
 
        {/* 도시 리스트에 따라 버튼 생성 */}
        {cities.map((item, index) => (
