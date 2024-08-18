@@ -61,6 +61,7 @@ function App() {
     }
   }, [getCurrentLocation, city]);
 
+  
   return (
     <div>
       {loading? <div className="container">
